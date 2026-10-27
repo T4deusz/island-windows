@@ -1,0 +1,8 @@
+bin/
+obj/
+.vs/
+*.user
+*.pfx
+*.cer
+*.msix
+signing.*

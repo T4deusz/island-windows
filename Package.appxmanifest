@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3" xmlns:uap7="http://schemas.microsoft.com/appx/manifest/uap/windows10/7" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap uap3 uap7 rescap">
+ <Identity Name="Island.Desktop" Publisher="CN=Island Local Development" Version="1.3.0.0" ProcessorArchitecture="x64"/>
+ <Properties><DisplayName>Island</DisplayName><PublisherDisplayName>Island Desktop</PublisherDisplayName><Description>Your desktop, at a glance.</Description><Logo>Assets\StoreLogo.png</Logo></Properties>
+ <Dependencies><TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.19041.0" MaxVersionTested="10.0.26100.0"/></Dependencies>
+ <Resources><Resource Language="en-us"/></Resources>
+ <Applications><Application Id="Island" Executable="Island.exe" EntryPoint="Windows.FullTrustApplication"><uap:VisualElements DisplayName="Island" Description="Your desktop, at a glance." BackgroundColor="#19191D" Square150x150Logo="Assets\Logo150.png" Square44x44Logo="Assets\Logo44.png"/></Application></Applications>
+ <Capabilities><uap3:Capability Name="userNotificationListener"/><uap7:Capability Name="globalMediaControl"/><rescap:Capability Name="runFullTrust"/><DeviceCapability Name="bluetooth"/><DeviceCapability Name="webcam"/></Capabilities>
+</Package>

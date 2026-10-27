@@ -1,0 +1,16 @@
+<UserControl x:Class="Island.WorkspaceView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Foreground="White" UseLayoutRounding="True" Focusable="True">
+ <Border CornerRadius="27" Background="#FC111115" BorderBrush="#26FFFFFF" BorderThickness="1" Margin="0" Padding="0,0,0,12"><Border.Effect><DropShadowEffect BlurRadius="20" ShadowDepth="4" Opacity="0.35"/></Border.Effect>
+  <Grid><Grid.RowDefinitions><RowDefinition Height="60"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+   <Grid Background="Transparent" MouseLeftButtonDown="TitleDrag"><Grid.ColumnDefinitions><ColumnDefinition Width="166"/><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+    <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="16,0,0,0"><Button Content="Back" FontSize="11" Padding="7,7" Click="CloseClick" ToolTip="Back to your island"/><Button Content="Collapse" FontSize="11" Padding="7,7" Margin="5,0,0,0" Click="MinimizeClick" ToolTip="Collapse island"/></StackPanel>
+    <TextBox x:Name="CommandSearch" Grid.Column="1" Margin="12,12,18,12" Padding="12,7" Background="#29292F" BorderBrush="#3C3C45" FontSize="13" ToolTip="Search tools, type a calculation, or run a command" AutomationProperties.Name="Search commands"/>
+    <TextBlock Grid.Column="1" Text="Search tools or type a calculation…" Foreground="#70707F" FontSize="12" VerticalAlignment="Center" Margin="26,0,0,0" IsHitTestVisible="False"><TextBlock.Style><Style TargetType="TextBlock"><Setter Property="Visibility" Value="Collapsed"/><Style.Triggers><DataTrigger Binding="{Binding Text.Length, ElementName=CommandSearch}" Value="0"><Setter Property="Visibility" Value="Visible"/></DataTrigger></Style.Triggers></Style></TextBlock.Style></TextBlock>
+    <Button Grid.Column="2" Content="Detach" Click="DetachClick" FontSize="11" Padding="12,7" Margin="0,0,22,0" VerticalAlignment="Center" Background="#303037"/>
+   </Grid>
+   <Grid Grid.Row="1"><Grid.ColumnDefinitions><ColumnDefinition x:Name="SidebarWidth" Width="166"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+    <Border x:Name="Sidebar" Background="#151518" CornerRadius="0,12,0,0" Padding="12,12,10,12"><ScrollViewer VerticalScrollBarVisibility="Auto"><StackPanel x:Name="Navigation"/></ScrollViewer></Border>
+    <DockPanel Grid.Column="1" Margin="24,18,18,10"><StackPanel DockPanel.Dock="Top"><TextBlock x:Name="PageTitle" FontSize="25" FontWeight="SemiBold"/><TextBlock x:Name="PageSubtitle" Foreground="#90909F" FontSize="12" Margin="0,7,0,22" TextWrapping="Wrap"/></StackPanel><TextBlock x:Name="StatusLine" DockPanel.Dock="Bottom" Foreground="#898998" FontSize="11" TextWrapping="Wrap" Margin="0,12,0,0"/><ScrollViewer x:Name="PageScroll" VerticalScrollBarVisibility="Auto"><StackPanel x:Name="Body" Margin="0,0,10,0"/></ScrollViewer></DockPanel>
+   </Grid>
+  </Grid>
+ </Border>
+</UserControl>

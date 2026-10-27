@@ -1,0 +1,372 @@
+[
+  {
+    "feature": "Face Unlock",
+    "implementation": "Windows Hello setup link; Windows manages actual secure face unlock. No password storage or lock-screen bypass.",
+    "requested": "Come back to a locked Mac, look at it, and you're in. Guided setup takes a minute; recognition runs on-device with Apple Vision and a liveness check, and your face prints and password stay in the Keychain."
+  },
+  {
+    "feature": "Now Playing",
+    "implementation": "Implemented: event-driven play/pause, artwork, seeking, capability-gated shuffle/repeat/speed. Per-app volume in Mixer; no Apple Music favorite integration.",
+    "requested": "Spotify and Apple Music controls with album art, scrubbing, shuffle and repeat, app-volume, and one-tap Favorite in Apple Music — plus playback speed for video playing in Chrome, Brave, Edge, Vivaldi or Safari, all from a collapsed now-playing island on the notch."
+  },
+  {
+    "feature": "AI Usage Tracker",
+    "implementation": "Partial: explicitly chosen Codex/Claude/normalized Cursor/Copilot logs; reported tokens/cost/limits, provider ordering/hiding. No automatic discovery, API polling or limit alerts.",
+    "requested": "Track Claude Code, Codex, Cursor, and Copilot rate-limit windows, tokens, and cost from the notch — from local CLI logs or a provider API key (stored in the Keychain), with alerts before you hit a limit. Choose which provider sections appear, and in what order."
+  },
+  {
+    "feature": "Sound Mixer",
+    "implementation": "Partial: real per-app Windows volume/mute. Three-band EQ needs a processing driver and is not implemented.",
+    "requested": "Turn one app down, mute it, or reshape it with a three-band equaliser — without touching the system volume. Opens from the chip beside the output picker (macOS 14.4+)."
+  },
+  {
+    "feature": "Search & Translate",
+    "implementation": "Partial: nine web engines, browser translation on click, arithmetic/history. No live translation, custom engine editor or video downloader.",
+    "requested": "Type a query in the notch and send it to any of nine engines or your own, translate pasted text as you type, do quick sums with history — or paste a video link and save the file."
+  },
+  {
+    "feature": "Command Palette",
+    "implementation": "Implemented inside the island: Ctrl+Alt+K tool search, quick actions, calculations and snippet copying. Ctrl+1-9 switches tool pages.",
+    "requested": "Press ⌃⌥K anywhere and type — jump to any tab, toggle Caffeine, start a timer, or run a Shortcut. Every Notchy action is one keystroke away, with ⌘1–9 tab switching built in."
+  },
+  {
+    "feature": "Knock to Control",
+    "implementation": "Not implemented; chassis and trackpad knock sensing require hardware-specific integration.",
+    "requested": "Tap your trackpad — or knock the chassis — to open the notch, the Shelf, Clipboard, Caffeine, or play/pause. Single, double, and triple taps each run their own action, with an adjustable sensitivity and typing protection so it never false-fires. A double-tap-a-key mode works on any Mac too."
+  },
+  {
+    "feature": "Menu Bar Detach",
+    "implementation": "Windows equivalent: tools open directly in the island by default; optionally detach a page into a resizable native window. Tray and Keep Awake controls remain.",
+    "requested": "Pop any tab — Clipboard, Timer, AI Usage, Cuely — out of the notch and into a standalone menu-bar popover, plus a one-click Caffeine toggle right beside the clock."
+  },
+  {
+    "feature": "Clipboard History",
+    "implementation": "Implemented for text: opt-in, searchable in-memory history and persistent pins. Source exclusion flags respected where provided.",
+    "requested": "Every copy lands in a scrollable history shelf inside the notch, with smart actions for links, colors, and emails. Pin favorites to keep them forever — pins survive the cap and even Clear."
+  },
+  {
+    "feature": "Zoom Teleprompter",
+    "implementation": "Windows equivalent: detachable local script scroller with adjustable speed, positioned by the user below the webcam.",
+    "requested": "Cuely scrolls your script right beneath the webcam inside the notch, keeping your eyes perfectly aligned for Zoom calls."
+  },
+  {
+    "feature": "System HUDs",
+    "implementation": "Partial: animated volume/brightness HUDs and standard volume-key interception. Brightness/vendor flyouts may remain.",
+    "requested": "Replace bulky macOS overlays. Volume, brightness, and caffeine toggles animate fluidly out of the notch — and Notchy can even hide the stock macOS HUD entirely, including on macOS Tahoe."
+  },
+  {
+    "feature": "AirPods Manager",
+    "implementation": "Partial: Windows Bluetooth connection/battery data where exposed. No nearby-case discovery, per-bud protocol or one-click pairing.",
+    "requested": "Detect nearby cases, show per-bud battery, and connect with one tap. A beautiful iOS-style experience on Mac."
+  },
+  {
+    "feature": "Pomodoro Timer",
+    "implementation": "Partial: focus/break chaining, pause/resume, stopwatch and seven-day focus-minute history. No mascot or streak visualization.",
+    "requested": "Run focus sessions directly from the notch — with session chaining, a stopwatch, streaks, and a 7-day focus chart. A beautifully animated countdown keeps you on track."
+  },
+  {
+    "feature": "Menu Bar Calendar",
+    "implementation": "Partial: existing local agenda/month calendar; no cloud calendar synchronization.",
+    "requested": "A fast, native calendar widget that drops down from the notch. See upcoming events from iCloud, Google, or Exchange."
+  },
+  {
+    "feature": "Camera Mirror",
+    "implementation": "Implemented: explicit-start native local mirrored camera feed, stopped when leaving the page. Requires hardware and Windows permission; hardware untested.",
+    "requested": "Quickly check your appearance before joining a video call. A high-quality local camera feed instantly drops down."
+  },
+  {
+    "feature": "Hide the Notch",
+    "implementation": "Windows equivalent: tray hide/show for the virtual island. No macOS menu bar to mask.",
+    "requested": "Hide the Mac notch by turning the menu bar black, while keeping all your Dynamic Island tools active."
+  },
+  {
+    "feature": "100% Native",
+    "implementation": "Windows equivalent: native C#/WPF desktop UI without Electron or a browser runtime.",
+    "requested": "Built natively in SwiftUI. Fast, near-zero CPU at idle, and tuned for Apple silicon."
+  },
+  {
+    "feature": "Liquid Glass UI",
+    "implementation": "Visual adaptation: attached notch, dark translucent workspace, rounded panels and traffic-light controls. Not Apple's material engine; whole-app scale only.",
+    "requested": "A premium, Apple-like Liquid Glass aesthetic built natively in SwiftUI — and a resizable panel: set the expanded island's width and height with a live preview."
+  },
+  {
+    "feature": "Quick Notes",
+    "implementation": "Implemented: local notes with debounced automatic persistence.",
+    "requested": "Jot a thought straight from the notch without switching apps. Notes drop into the pill instantly and stay there until you're done."
+  },
+  {
+    "feature": "File Shelf",
+    "implementation": "Implemented with limits: drag onto island, persistent original-file references, multi-select and Alt-drag out. Removing references never deletes originals.",
+    "requested": "Drag files onto the notch to stash them, then drag out wherever you need. Shelf items survive quits and relaunches — the fastest clipboard for files."
+  },
+  {
+    "feature": "Keep Awake",
+    "implementation": "Implemented: timed, indefinite or until a chosen clock time; automatic expiry and exit cleanup.",
+    "requested": "One tap from the pill keeps your Mac awake — indefinitely, for a set duration, or until a clock time you pick. Auto-disables so you never forget."
+  },
+  {
+    "feature": "Live Weather",
+    "implementation": "Implemented: existing opt-in Open-Meteo weather with manual city configuration.",
+    "requested": "Local temperature and conditions on the Home tab, updated automatically. No extra app or widget needed."
+  },
+  {
+    "feature": "Focus Mode",
+    "implementation": "Partial: quiet mode and presentation/fullscreen suppression; no universal Windows Focus/DND synchronization.",
+    "requested": "Notchy detects when Focus changes and shows a compact island — and while DND is on, low-priority alerts stay quiet so only what matters shows."
+  },
+  {
+    "feature": "Battery HUD",
+    "implementation": "Implemented: charger, low-battery and configurable full-charge target alerts.",
+    "requested": "A compact live activity replaces macOS's chunky low-battery alert. See charge level and charging state right on the notch."
+  },
+  {
+    "feature": "Synced Lyrics",
+    "implementation": "Implemented: explicit LRCLIB request and time-synchronized current line. Network/provider matching dependent.",
+    "requested": "Time-synced lyrics scroll under the notch as your song plays — Apple Music, Spotify, anything Now Playing. Free, via LRCLIB."
+  },
+  {
+    "feature": "Apple Reminders",
+    "implementation": "Windows equivalent: local due reminders while Island runs; no Apple/iCloud sync.",
+    "requested": "Capture a reminder and see what's due without leaving your work. Syncs to real Apple Reminders through iCloud."
+  },
+  {
+    "feature": "Image Converter",
+    "implementation": "Partial: PNG/JPEG/TIFF/BMP/PDF output and first-page PDF input. HEIC input needs a Windows codec; no HEIC output.",
+    "requested": "Drop a photo on the shelf and convert HEIC, PNG, JPEG, TIFF or PDF — fully offline, drag the result straight back out."
+  },
+  {
+    "feature": "Audio Switcher",
+    "implementation": "Partial: opens Windows output settings. No built-in default-endpoint switcher.",
+    "requested": "Switch sound output — speakers, AirPods, monitor — with one tap from the notch. No diving into System Settings."
+  },
+  {
+    "feature": "Device Battery",
+    "implementation": "Partial: existing Bluetooth battery properties where Windows drivers expose them; no proprietary Magic accessory protocol.",
+    "requested": "Magic Mouse, Keyboard and Trackpad charge, right next to your AirPods — plus third-party Bluetooth headphones and speakers. Every wireless device at a glance."
+  },
+  {
+    "feature": "Download Alerts",
+    "implementation": "Implemented with limits: opt-in default Downloads-folder watcher, session history and reveal actions.",
+    "requested": "A clean island pops the moment a download lands in your Downloads folder — Reveal in Finder with one tap. Works with every browser, no extension."
+  },
+  {
+    "feature": "Apple Shortcuts",
+    "implementation": "Windows equivalent: explicitly pinned .lnk/.url/apps. Apple Shortcuts workflows cannot run on Windows.",
+    "requested": "Run your Apple Shortcuts straight from the notch — a colorful grid of one-tap chips with live run feedback. No Shortcuts app, no menu digging."
+  },
+  {
+    "feature": "Zip & Unzip",
+    "implementation": "Implemented: ZIP shelf files; extraction checks traversal, symlinks, entry count and expanded size. No forced overwrite.",
+    "requested": "Select files on the shelf and compress them into a Finder-friendly zip — or expand an archive — without ever opening Finder. Powered by native ditto."
+  },
+  {
+    "feature": "Screenshot Shelf",
+    "implementation": "Partial: Windows region capture plus explicit staging of the clipboard image. No automatic screenshot collection.",
+    "requested": "Every screenshot you take is auto-staged on the notch as a draggable island — drop it into a chat or doc without hunting the Desktop."
+  },
+  {
+    "feature": "Drive Eject",
+    "implementation": "Partial: removable-drive list/open and Windows device settings. No confirmed one-click ejection.",
+    "requested": "Plug in a USB drive and an island pops with a one-tap Eject. A clean 'Safe to disconnect' confirms when it's done."
+  },
+  {
+    "feature": "App Launcher",
+    "implementation": "Implemented with limits: pin apps/shortcuts, launch, remove and move up. No drag reorder.",
+    "requested": "Pin your go-to apps to a Launcher tab in the notch and open them with one tap. Add from a picker, drag to reorder — your dock away from the Dock."
+  },
+  {
+    "feature": "Window Snapping",
+    "implementation": "Partial: tile the previously focused window to halves/top/bottom/maximize. No window-drag interception.",
+    "requested": "Drag any window up to the notch and snap zones appear in the island — release to tile it left, right, halves, or full screen. Rectangle-style tiling with the notch as the drop target."
+  },
+  {
+    "feature": "Text Snippets",
+    "implementation": "Partial: persistent named snippets and palette copying without history insertion. No injected paste or automatic expansion.",
+    "requested": "Save addresses, replies, and code blocks as reusable snippets, then paste them from the command palette — a TextExpander-style expander, with clipboard history untouched."
+  },
+  {
+    "feature": "OCR & Search",
+    "implementation": "Partial: explicit native clipboard-image OCR using installed Windows language packs; text history search. No automatic OCR indexing.",
+    "requested": "Copy a screenshot and Notchy reads the text out of it — fully on-device via Apple Vision. Clipboard search even matches words inside your images, so any past copy is a few keystrokes away."
+  },
+  {
+    "feature": "Screen Capture",
+    "implementation": "Windows equivalent: Windows region selector; clipboard result can be staged and OCRed.",
+    "requested": "One tap opens the familiar macOS region selector — the shot lands on the clipboard for instant paste or OCR and on the shelf as a PNG you can drag anywhere."
+  },
+  {
+    "feature": "Color Eyedropper",
+    "implementation": "Implemented with limits: click a pixel, copy hex and show HUD; Escape cancels. No magnifier.",
+    "requested": "Sample any pixel on screen with the system magnifier — the hex code is copied instantly and surfaced as a color island. No screen-recording permission needed."
+  },
+  {
+    "feature": "Mic Mute",
+    "implementation": "Implemented with limits: mute default communications input endpoint. Other input devices are unaffected; hardware untested.",
+    "requested": "One system-wide mute that silences you in every meeting app at once — Zoom, Meet, Teams — by muting the input device itself via CoreAudio. No per-app buttons to hunt."
+  },
+  {
+    "feature": "Keystroke HUD",
+    "implementation": "Not implemented; no generic typed-key capture or false password-field safety guarantee.",
+    "requested": "Present or record with your shortcuts on screen — every keypress surfaces as an island in the notch, right where your audience is looking. Password fields are never captured."
+  },
+  {
+    "feature": "Keyboard Cleaning Lock",
+    "implementation": "Implemented: explicit 20-second lock, Ctrl+Alt+Escape exit and unconditional timeout. Secure attention remains Windows-managed; hardware untested.",
+    "requested": "Lock every key so you can wipe your keyboard without typing garbage — a countdown island shows the state, and ⌘⎋ unlocks instantly."
+  },
+  {
+    "feature": "Menu Bar Icon Hiding",
+    "implementation": "Not implemented; shell-owned Windows tray icons have no supported macOS-style manipulation API.",
+    "requested": "Declutter the menu bar Bartender-style: ⌘-drag icons past the separator to hide them, tap the chevron to reveal. No private APIs, no extra app."
+  },
+  {
+    "feature": "System Stats",
+    "implementation": "Partial: native CPU/memory while page is open; no network graph.",
+    "requested": "Live CPU, memory, and network readouts one tap from the notch header — a glanceable iStat-style flyout without another menu-bar icon."
+  },
+  {
+    "feature": "Call Island",
+    "implementation": "Not implemented; requires provider-specific call and answer/decline integrations.",
+    "requested": "Incoming FaceTime and phone calls surface as an iPhone-style island on the notch — see who's calling and answer or decline without hunting the notification. Teams, Zoom and WhatsApp calls get their own island with a running duration, instead of being mistaken for music."
+  },
+  {
+    "feature": "Stocks Ticker",
+    "implementation": "Not implemented; requires a configured market-data provider, chart and delay/session metadata. No fabricated prices.",
+    "requested": "A watchlist that lives in the notch: live prices with the day's chart, a ticker that rotates through the symbols you pin to the collapsed pill, and an alert when a stock rises above or falls below a price you set. Pre-market, after-hours and closed are labelled, so a price you cannot act on never sits there pretending to be live."
+  },
+  {
+    "feature": "Notch Terminal",
+    "implementation": "Not implemented; no embedded ConPTY/VT100 terminal or fake command-box substitute.",
+    "requested": "A real VT100/xterm terminal lives in its own notch tab — colors, cursor keys, TUI apps all work, since it's a login shell in a PTY, not a command box. Switch tabs without killing the running shell."
+  },
+  {
+    "feature": "Desktop Widgets",
+    "implementation": "Partial Windows equivalent: detached native workspace pages. No Windows Widgets-board extension.",
+    "requested": "Drag AI Usage, Activity rings, or a running Timer onto the desktop or into Notification Center. Native WidgetKit widgets, refreshed in the background — no HTML, no geeklets, no refresh interval to tune."
+  },
+  {
+    "feature": "Agent Approvals",
+    "implementation": "Integration foundation: authenticated approval activities and explicit Allow/Deny decisions for configured clients. No native agent hook installed; no bypass of native permissions.",
+    "requested": "When Claude Code or Codex is genuinely blocked on a permission, an Allow/Deny island appears on the notch and your answer goes straight back through the hook. Answer it in the terminal instead and the island clears itself."
+  },
+  {
+    "feature": "Privacy Indicator",
+    "implementation": "Not implemented system-wide; explicit own-camera use and Windows privacy settings links only.",
+    "requested": "A notch-native pill lights up the instant any app's camera or mic goes live — system-wide detection via CoreMediaIO and CoreAudio, mirroring macOS's own green/orange dots where you're already looking."
+  },
+  {
+    "feature": "Caps Lock HUD",
+    "implementation": "Implemented: modifier-state polling and toggle confirmation; no typed-key logging.",
+    "requested": "A brief island confirms every Caps Lock toggle — built for the keyboards that dropped the physical LED. Reads modifier flags only, so no Input Monitoring permission is needed."
+  },
+  {
+    "feature": "Full Charge Island",
+    "implementation": "Implemented: configurable 80-100 percent crossing alert. No added low-battery sound option.",
+    "requested": "A pill fires when your battery hits your chosen full-charge level (80–100%) — the cue to unplug, with an optional low-battery alert sound on the way down."
+  },
+  {
+    "feature": "Alt HUD Styles",
+    "implementation": "Partial: sidecar/inline positions retained. No edge-pinned or circular gauge.",
+    "requested": "Swap the in-notch volume/brightness island for an edge-pinned bar or a circular gauge with adjustable size — an Atoll-style alternative when you want the HUD off the notch entirely."
+  },
+  {
+    "feature": "Live Audio Spectrum",
+    "implementation": "Implemented: existing actual WASAPI loopback FFT with smoothing and endpoint recovery.",
+    "requested": "The Now Playing visualizer reacts to a real FFT of your system audio via a Core Audio process tap — bars move with the actual music, not a synthetic wobble. Falls back gracefully on unsupported setups."
+  },
+  {
+    "feature": "Custom Idle Animation",
+    "implementation": "Not implemented; no Lottie runtime/importer.",
+    "requested": "Drop in your own Lottie JSON as the closed-notch idle animation, then dial in speed, scale, and vertical offset with a live preview against the notch — your own motion where the default pill sits."
+  },
+  {
+    "feature": "Multiple Live Activities",
+    "implementation": "Partial: simultaneous authenticated activity list. No adaptive-width ranked multi-chip pill.",
+    "requested": "Music, a running timer, a long build, and a download sit side by side on the collapsed pill instead of fighting for one slot — the pill widens to fit and ranks activities by what costs most to miss."
+  },
+  {
+    "feature": "Lock Screen Widgets",
+    "implementation": "Unavailable to this desktop overlay on Windows secure lock screen. Existing hide-on-lock behavior remains.",
+    "requested": "Clock, date, battery, and Now Playing render on the macOS lock screen itself, with per-widget toggles for weather, timer, calendar, reminders, Bluetooth, and Focus — plus true full-screen lyrics with transport controls. Clicks pass through to the password field."
+  },
+  {
+    "feature": "Message Island",
+    "implementation": "Partial: Windows notification bodies can be mirrored; no inline SMS/Messages replies.",
+    "requested": "Incoming Messages and SMS surface as an island with the sender and body, and you can reply inline from the notch. Driven through Accessibility — no Full Disk Access required."
+  },
+  {
+    "feature": "Notification Mirror",
+    "implementation": "Implemented with limits: packaged opt-in listener and session-only history; no action forwarding or old-toast replay.",
+    "requested": "Mirrors macOS Notification Center into a notch tab so delivered notifications are one glance away instead of a swipe and a scroll. Optional, and only active with Full Disk Access granted."
+  },
+  {
+    "feature": "Agent Activity",
+    "implementation": "Integration foundation: scripts can POST agent/token/cost reports; no automatic agent hook registration.",
+    "requested": "Installed Claude Code and Codex hooks report turns, approval prompts, and per-turn cost straight to the notch — you see what the agent is doing, and what the turn cost, without tabbing back."
+  },
+  {
+    "feature": "Shell Activity",
+    "implementation": "Integration foundation: included PowerShell command wrapper posts start/completion; no shell profile modified.",
+    "requested": "An opt-in zsh preexec hook turns long-running commands into live notch islands — start a build, look away, and the pill tells you when it finished. Removed cleanly the moment you turn it off."
+  },
+  {
+    "feature": "Developer API",
+    "implementation": "Implemented: opt-in authenticated 127.0.0.1:9999 server, per-user DPAPI token, bounded connections/requests and activity/decision endpoint.",
+    "requested": "Turn on the local API in Settings › About › Developer and Notchy listens on 127.0.0.1:9999 with a per-install token. Post token-signed JSON and your scripts, CI, or menu-bar tools render their own live activity and notification islands. Off by default — nothing listens until you enable it."
+  },
+  {
+    "feature": "External Display Control",
+    "implementation": "Implemented with limits: explicit DDC/CI discovery/brightness writes. Requires compatible monitor/driver; hardware untested.",
+    "requested": "Drive brightness on DDC/CI external monitors from the same HUD and hardware keys you use on the built-in display, via Apple silicon's IOAVService. Off by default; on when your monitor speaks DDC."
+  },
+  {
+    "feature": "Keyboard Backlight",
+    "implementation": "Not implemented; requires vendor-specific Windows interfaces.",
+    "requested": "Raise, lower, or kill the keyboard backlight from the notch through the same CoreBrightness client Control Center uses — from the command palette or the illumination keys, with a compact draggable island instead of a full-screen overlay. Macs with a backlit keyboard only."
+  },
+  {
+    "feature": "AirDrop from the Shelf",
+    "implementation": "AirDrop unavailable on Windows; native shelf file drag-out only.",
+    "requested": "Send anything staged on the file shelf straight to AirDrop, with a notch-anchored transfer animation and real success or failure feedback when the share completes."
+  },
+  {
+    "feature": "Clipboard Smart Actions",
+    "implementation": "Partial: copy, HTTP(S) link opening, email compose and hex swatches. No injected paste or burst UI.",
+    "requested": "Copy a URL, hex color, or email address and the clip offers the matching one-tap action — open, preview, compose. Rapid copy stacks bursts, and auto-paste drops the pick straight into the front app."
+  },
+  {
+    "feature": "Peek on Hover",
+    "implementation": "Implemented: compact peek with previous/play-pause/next controls.",
+    "requested": "Hover the closed pill for a minimal now-playing peek with transport controls — no expansion, no click. Skip a track and move on without ever opening the panel."
+  },
+  {
+    "feature": "Drift-free Stopwatch",
+    "implementation": "Implemented with limits: absolute count-up, pause/resume/reset in Focus; not persisted or shown in collapsed pill.",
+    "requested": "A wall-clock count-up stopwatch with pause, resume, and reset that keeps ticking on the collapsed pill — and costs nothing while nothing is showing it."
+  },
+  {
+    "feature": "Gestures & Hover Open",
+    "implementation": "Partial: horizontal/vertical switches, hover peek and auto-collapse. No hidden-edge activation.",
+    "requested": "Swipe on the notch to move between tabs, hover to open, hover the top edge to expand even when the pill is hidden, and let it auto-collapse when you're done. Every gesture is individually switchable."
+  },
+  {
+    "feature": "Hidden from Screen Capture",
+    "implementation": "Implemented best effort: Windows display-affinity exclusion; not guaranteed against every capture path. Tray hide remains available.",
+    "requested": "Screen Sharing Privacy: Hidden from Captures asks capture apps to exclude Notchy while it stays visible to you. Some sharing apps can still capture it; Hidden Everywhere hides it on your screen too."
+  },
+  {
+    "feature": "Pill on Any Mac",
+    "implementation": "Windows equivalent: virtual island with monitor, scale and offset/attached-notch settings.",
+    "requested": "No notch, no problem: a virtual pill floats where the notch would be on Airs, iMacs, Mac minis, and external monitors — with adjustable size, height offset, target display, and fullscreen behaviour."
+  },
+  {
+    "feature": "Timer Mascots",
+    "implementation": "Not implemented; no animated mascot picker.",
+    "requested": "Pick a mascot to ride the countdown on the pill — a small, deliberately silly touch on an otherwise very serious productivity timer."
+  },
+  {
+    "feature": "Automatic Updates",
+    "implementation": "Not implemented; portable/MSIX releases only, no signed hosted feed or beta channel.",
+    "requested": "Sparkle-backed auto-updates with a signed release feed, an optional beta channel, and in-app release notes — so Notchy stays current without a store, and updates are "
+  }
+]
