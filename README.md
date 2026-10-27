@@ -3,7 +3,7 @@
 A native C# / WPF dynamic island for Windows, with a macOS-inspired attached notch, spring motion, media controls, compact system HUDs and tools accessible directly inside the island.
 
 ![Island media controls](docs/images/Capture%20d'écran%202026-10-27%20153805.png)
-![Island media controls](main/docs/images/Capture%20d'écran%202026-10-27%20153810.png)
+![Island media controls](docs/images/Capture%20d'écran%202026-10-27%20153810.png)
 
 [Download the latest Windows build](https://github.com/T4deusz/island-windows/releases/latest) · [Feature coverage](Feature-Coverage-1.3.md) · [Build from source](#build-from-source)
 
